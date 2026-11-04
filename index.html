@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFTERYOU</title>
+  <meta name="description" content="AFTERYOU - game survival bullet hell: bertahan dari bayangan masa lalumu.">
+  <meta name="theme-color" content="#050508">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gameContainer">
+    <canvas id="game"></canvas>
+
+    <!-- HUD Kiri Atas yang Bersih & Estetik -->
+    <div id="hud">
+      <div class="hud-box">
+        <div id="topScore">BEST: 0</div>
+        <div id="score">SCORE: 0</div>
+      </div>
+      <div class="hud-box">
+        <div id="warning">SHADOW: DORMANT</div>
+        <div id="dashStatus">DASH: READY</div>
+      </div>
+    </div>
+
+    <button id="pauseBtn" class="hud-btn hidden">PAUSE</button>
+
+    <div id="bossBarContainer" class="hidden">
+      <div id="bossMultiplier"></div>
+      <div id="bossBarTrack">
+        <div id="bossBarFill"></div>
+      </div>
+    </div>
+
+    <!-- Message Overlay (Start & Game Over) -->
+    <div id="message">
+      <h1 id="title">AFTERYOU</h1>
+      <p id="description">Survive the reflections of your past.</p>
+      <button id="start">START GAME</button>
+    </div>
+
+    <!-- Pause Overlay -->
+    <div id="pauseOverlay" class="hidden">
+      <h2>GAME PAUSED</h2>
+      <button id="resumeBtn">RESUME</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
